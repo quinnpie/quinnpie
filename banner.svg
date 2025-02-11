@@ -1,34 +1,39 @@
-<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradient Definition -->
-    <linearGradient id="gradient" gradientTransform="rotate(45)">
-      <stop offset="0%" stop-color="#6A5ACD" />
-      <stop offset="100%" stop-color="#8A2BE2" />
+    <!-- Gradient for Name -->
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a0dad"/>
+      <stop offset="100%" stop-color="#8a2be2"/>
     </linearGradient>
-
+    
+    <!-- Snowflake Shape -->
+    <symbol id="snowflake" viewBox="0 0 100 100">
+      <text x="50%" y="50%" font-size="24" fill="white" font-family="Arial" text-anchor="middle" dominant-baseline="middle">❄</text>
+    </symbol>
+    
     <!-- Snowflake Animation -->
     <style>
-      @keyframes snow {
-        0% { transform: translateY(0); opacity: 1; }
-        100% { transform: translateY(20px); opacity: 0; }
+      @keyframes snowfall {
+        0% { transform: translateY(0px) translateX(0px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(200px) translateX(var(--x-move, 0px)) rotate(360deg); opacity: 0; }
       }
       .snowflake {
-        fill: white;
-        animation: snow 3s linear infinite;
+        animation: snowfall var(--duration, 4s) linear infinite;
       }
     </style>
   </defs>
-
-  <!-- Name with Gradient -->
-  <text x="50%" y="50%" font-size="60" font-weight="bold" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">
-    Nurul Jannah
-  </text>
-
-  <!-- Snowflakes -->
-  <circle class="snowflake" cx="50" cy="20" r="3"/>
-  <circle class="snowflake" cx="150" cy="10" r="4"/>
-  <circle class="snowflake" cx="250" cy="30" r="2"/>
-  <circle class="snowflake" cx="350" cy="15" r="3"/>
-  <circle class="snowflake" cx="450" cy="25" r="4"/>
-  <circle class="snowflake" cx="550" cy="5" r="3"/>
+  
+  <!-- Name Text -->
+  <text x="50%" y="50%" font-size="50" font-family="Arial, sans-serif" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">Nurul Jannah</text>
+  
+  <!-- Animated Snowflakes -->
+  <use x="10" y="10" href="#snowflake" class="snowflake" style="--x-move: -10px; --duration: 5s;"/>
+  <use x="100" y="-20" href="#snowflake" class="snowflake" style="--x-move: 20px; --duration: 6s;"/>
+  <use x="200" y="-30" href="#snowflake" class="snowflake" style="--x-move: -15px; --duration: 4.5s;"/>
+  <use x="300" y="-10" href="#snowflake" class="snowflake" style="--x-move: 30px; --duration: 7s;"/>
+  <use x="400" y="-25" href="#snowflake" class="snowflake" style="--x-move: -20px; --duration: 5.5s;"/>
+  <use x="500" y="-15" href="#snowflake" class="snowflake" style="--x-move: 10px; --duration: 6.5s;"/>
+  <use x="600" y="-35" href="#snowflake" class="snowflake" style="--x-move: -25px; --duration: 5.2s;"/>
+  <use x="700" y="-5" href="#snowflake" class="snowflake" style="--x-move: 15px; --duration: 6.8s;"/>
 </svg>
+
