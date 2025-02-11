@@ -1,3 +1,5 @@
+![My Banner](https://raw.githubusercontent.com/quinnpie/quinnpie/main/banner.svg)
+
 ## Hi there! 👋 I'm Nurul Jannah
 
 ### 👩‍💻 About Me  
