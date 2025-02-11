@@ -1,0 +1,34 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient Definition -->
+    <linearGradient id="gradient" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#6A5ACD" />
+      <stop offset="100%" stop-color="#8A2BE2" />
+    </linearGradient>
+
+    <!-- Snowflake Animation -->
+    <style>
+      @keyframes snow {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(20px); opacity: 0; }
+      }
+      .snowflake {
+        fill: white;
+        animation: snow 3s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Name with Gradient -->
+  <text x="50%" y="50%" font-size="60" font-weight="bold" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">
+    Nurul Jannah
+  </text>
+
+  <!-- Snowflakes -->
+  <circle class="snowflake" cx="50" cy="20" r="3"/>
+  <circle class="snowflake" cx="150" cy="10" r="4"/>
+  <circle class="snowflake" cx="250" cy="30" r="2"/>
+  <circle class="snowflake" cx="350" cy="15" r="3"/>
+  <circle class="snowflake" cx="450" cy="25" r="4"/>
+  <circle class="snowflake" cx="550" cy="5" r="3"/>
+</svg>
