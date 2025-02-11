@@ -5,6 +5,7 @@
       <stop offset="0%" stop-color="#6A5ACD" />
       <stop offset="100%" stop-color="#8A2BE2" />
     </linearGradient>
+
     <!-- Snowflake Animation -->
     <style>
       @keyframes snow {
@@ -17,10 +18,12 @@
       }
     </style>
   </defs>
+
   <!-- Name with Gradient -->
   <text x="50%" y="50%" font-size="60" font-weight="bold" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">
     Nurul Jannah
   </text>
+
   <!-- Snowflakes -->
   <circle class="snowflake" cx="50" cy="20" r="3"/>
   <circle class="snowflake" cx="150" cy="10" r="4"/>
@@ -29,4 +32,5 @@
   <circle class="snowflake" cx="450" cy="25" r="4"/>
   <circle class="snowflake" cx="550" cy="5" r="3"/>
 </svg>
+
 
