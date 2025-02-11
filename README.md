@@ -18,8 +18,7 @@
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=quinnpie&show_icons=true&theme=tokyonight) 
 
 ## 📫 Connect with Me  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](www.linkedin.com/in/nurul-jannah-idris03)  
-
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/nurul-jannah-idris03)
 
 <!---
 quinnpie/quinnpie is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
